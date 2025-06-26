@@ -1,7 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	hello
+	<div class="h-screen flex justify-center items-center">
+		<h1 class="text-7xl text-blue-700 text-center">hello</h1>
+	</div>
 </Layout>
+<script>
+	import { gsap } from "gsap";
+	import { SplitText } from "gsap/SplitText";
+	gsap.registerPlugin(SplitText);
+	const splitText = new SplitText("h1", {
+		type: "chars",
+	});
+	gsap.from(splitText.chars, {
+		duration: 0.8,
+		y: 100,
+		stagger: 0.4,
+		autoAlpha: 0,
+		filter: "blur(7px)"
+	});
+</script>
