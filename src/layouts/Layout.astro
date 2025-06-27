@@ -1,14 +1,36 @@
 ---
 import "@/styles/global.css";
 ---
+
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<title>Sprintissimo tech</title>
+		<meta
+			name="description"
+			content="Sitio web personalizado, implementación de CRM y ERP, marketing y crecimiento de ventas"
+		/>
+		<meta property="og:title" content="Sprintissimo Tech" />
+		<meta
+			property="og:description"
+			content="Sitio web personalizado, implementación de CRM y ERP, marketing y crecimiento de ventas"
+		/>
+		<meta property="og:image" content="/sprintissimo-og.webp" />
+		<meta property="og:url" content="https://www.sprintissimo.com/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Sprintissimo Tech" />
+		<meta name="twitter:card" content="photo" />
+		<meta name="twitter:title" content="Sprintissimo Tech" />
+		<meta
+			name="twitter:description"
+			content="Sitio web personalizado, implementación de CRM y ERP, marketing y crecimiento de ventas"
+		/>
+		<meta name="twitter:image" content="/sprintissimo-og.webp" />
+		<meta name="twitter:url" content="https://www.sprintissimo.com/" />
 	</head>
 	<body>
 		<slot />
