@@ -1,24 +1,22 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Services from "@/components/Services.astro";
+import Layout from "@/layouts/Layout.astro";
+import "@fontsource/shrikhand";
 ---
 
 <Layout>
-	<div class="h-screen flex justify-center items-center">
-		<h1 class="text-7xl text-blue-700 text-center">hello</h1>
-	</div>
+	<section class="h-dvh flex justify-center items-center font-extralight bg-gradient-to-t from-white via-50% via-brandColor/60 to-brandColor">
+		<header class="text-white text-center -mt-20">
+			<h1 class="text-4xl lg:text-7x">Sprintissimo</h1>
+			<p class="text-3xl lg:text-5xl">
+				Tu página web con marketing personalizado
+			</p>
+		</header>
+	</section>
+	<Services/>
 </Layout>
-<script>
-	import { gsap } from "gsap";
-	import { SplitText } from "gsap/SplitText";
-	gsap.registerPlugin(SplitText);
-	const splitText = new SplitText("h1", {
-		type: "chars",
-	});
-	gsap.from(splitText.chars, {
-		duration: 0.8,
-		y: 100,
-		stagger: 0.4,
-		autoAlpha: 0,
-		filter: "blur(7px)"
-	});
-</script>
+<style>
+	h1 {
+		font-family: "Shrikhand", system-ui;
+	}
+</style>
