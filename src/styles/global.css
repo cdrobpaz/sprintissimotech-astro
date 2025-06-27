@@ -1,1 +1,4 @@
 @import "tailwindcss";
+@theme{
+    --color-brandColor: #E07312
+}
